@@ -1,0 +1,2 @@
+# GitHub misidentifies .gs files. force JavaScript highlighting
+*.gs linguist-language=JavaScript

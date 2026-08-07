@@ -51,12 +51,7 @@ function handleChange(e) {
   var now = new Date();
 
   for (var i = 0; i < sheets.length; i++) {
-    var cell = sheets[i].getRange(REFRESH_CELL);
-
-    // don't clobber a real formula if someone put one in the dummy cell
-    if (cell.getFormula().toUpperCase().indexOf('=SUMBYCOLOR') === 0) continue;
-
-    cell.setValue(now);
+    sheets[i].getRange(REFRESH_CELL).setValue(now);
   }
 }
 

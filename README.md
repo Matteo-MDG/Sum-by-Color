@@ -72,6 +72,6 @@ Conditional formatting is invisible. A cell colored by a conditional formatting 
 
 No fill counts as white. Unfilled cells return `#ffffff`, identical to cells you deliberately painted white. Matching against a white reference cell will sum both.
 
-Some operations report as `OTHER`. Certain bulk paste-format and undo operations aren't consistently classified as `FORMAT`. If you find a case that doesn't refresh, edit any cell or reload the sheet to forces a recalculation manually.
+Some operations report as `OTHER`. Certain bulk paste-format and undo operations aren't consistently classified as `FORMAT`. If you find a case that doesn't refresh, edit any cell's color or reload the sheet to forces a recalculation manually.
 
 Large ranges are slow. Each call makes two `getRange` round-trips. Dozens of these across a workbook will be noticeable, since custom functions cap out at 30 seconds.

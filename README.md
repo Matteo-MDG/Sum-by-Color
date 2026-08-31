@@ -1,4 +1,4 @@
-# SUMBYCOLOR
+# SUM BY COLOR
 
 A Google Sheets custom Apps Script function that computes cells by their fill color
 
